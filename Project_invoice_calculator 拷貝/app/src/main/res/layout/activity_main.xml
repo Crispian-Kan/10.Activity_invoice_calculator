@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/click"
+        android:id="@+id/show_choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="175dp"
@@ -60,7 +60,7 @@
         android:layout_marginTop="550dp"
         android:layout_marginEnd="175dp"
         android:onClick="click_AtoB"
-        android:text="@string/Hw10_AtoB"
+        android:text="@string/start"
         android:textColor="#000000"
         android:textSize="15sp"
         android:textStyle="bold|italic"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_1to2"
+        android:id="@+id/btn_1und2"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_3to4"
+        android:id="@+id/btn_3und4"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -92,10 +92,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_1to2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_1und2" />
 
     <Button
-        android:id="@+id/btn_BtoC"
+        android:id="@+id/winning_result"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -105,10 +105,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_3to4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_3und4" />
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/restart_month"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -118,10 +118,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_BtoC" />
+        app:layout_constraintTop_toBottomOf="@+id/winning_result" />
 
     <Button
-        android:id="@+id/btn_CtoB"
+        android:id="@+id/btn_re_num"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -131,10 +131,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back" />
+        app:layout_constraintTop_toBottomOf="@+id/restart_month" />
 
     <Button
-        android:id="@+id/btn_CtoA"
+        android:id="@+id/btn_re_month"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:layout_marginTop="5dp"
@@ -143,7 +143,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_CtoB"
+        app:layout_constraintTop_toBottomOf="@+id/btn_re_num"
         style="@android:style/Widget.Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

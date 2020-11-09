@@ -15,75 +15,75 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn1B = (Button)findViewById(R.id.btn_1to2);
-        btn1B.setOnClickListener(btn1B_click);
+        Button btn_check12 = (Button)findViewById(R.id.btn_1und2);
+        btn_check12.setOnClickListener(btn12_check);
 
-        Button btn2B = (Button)findViewById(R.id.btn_3to4);
-        btn2B.setOnClickListener(btn2B_click);
+        Button btn_check34 = (Button)findViewById(R.id.btn_3und4);
+        btn_check34.setOnClickListener(btn34_check);
 
-        Button btn3B = (Button)findViewById(R.id.btn_BtoC);
-        btn3B.setOnClickListener(btn3B_click);
+        Button btn_check56 = (Button)findViewById(R.id.winning_result);
+        btn_check56.setOnClickListener(btn56_check);
 
-        Button btn4B = (Button)findViewById(R.id.back);
-        btn4B.setOnClickListener(btn4B_click);
+        Button btn_check78 = (Button)findViewById(R.id.restart_month);
+        btn_check78.setOnClickListener(btn78_check);
 
-        Button btn5B = (Button)findViewById(R.id.btn_CtoB);
-        btn5B.setOnClickListener(btn5B_click);
+        Button btn_check910 = (Button)findViewById(R.id.btn_re_num);
+        btn_check910.setOnClickListener(btn910_check);
 
-        Button btn6B = (Button)findViewById(R.id.btn_CtoA);
-        btn6B.setOnClickListener(btn6B_click);
+        Button btn_check11_12 = (Button)findViewById(R.id.btn_re_month);
+        btn_check11_12.setOnClickListener(btn11_12_check);
     }
-    private View.OnClickListener btn1B_click = new View.OnClickListener() {
+    private View.OnClickListener btn12_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
-            TextView text = (TextView)findViewById(R.id.click);
+            TextView text = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text.setText("2018 1,2月發票");
             set_num.setText("1");//月份記述數字
 
         }
     };
-    private View.OnClickListener btn2B_click = new View.OnClickListener() {
+    private View.OnClickListener btn34_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            TextView text_2 = (TextView)findViewById(R.id.click);
+            TextView text_2 = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text_2.setText("2018 3,4月發票");
             set_num.setText("2");//月份記述數字
         }
     };
-    private View.OnClickListener btn3B_click = new View.OnClickListener() {
+    private View.OnClickListener btn56_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            TextView text_3 = (TextView)findViewById(R.id.click);
+            TextView text_3 = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text_3.setText("2018 5,6月發票");
             set_num.setText("3");//月份記述數字
         }
     };
-    private View.OnClickListener btn4B_click = new View.OnClickListener() {
+    private View.OnClickListener btn78_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            TextView text_4 = (TextView)findViewById(R.id.click);
+            TextView text_4 = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text_4.setText("2018 7,8月發票");
             set_num.setText("4");//月份記述數字
         }
     };
-    private View.OnClickListener btn5B_click = new View.OnClickListener() {
+    private View.OnClickListener btn910_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            TextView text_5 = (TextView)findViewById(R.id.click);
+            TextView text_5 = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text_5.setText("2018 9,10月發票");
             set_num.setText("5");//月份記述數字
         }
     };
-    private View.OnClickListener btn6B_click = new View.OnClickListener() {
+    private View.OnClickListener btn11_12_check = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            TextView text_6 = (TextView)findViewById(R.id.click);
+            TextView text_6 = (TextView)findViewById(R.id.show_choose);
             TextView set_num = (TextView)findViewById(R.id.num);
             text_6.setText("2018 11,12月發票");
             set_num.setText("6");//月份記述數字
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void click_AtoB(View v){
 
-        TextView click_btn = (TextView)findViewById(R.id.click);
+        TextView click_btn = (TextView)findViewById(R.id.show_choose);
         TextView set_num = (TextView)findViewById(R.id.num);
 
         Intent intent = new Intent(this, SecondActivity.class);
